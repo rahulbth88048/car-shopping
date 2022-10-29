@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           
+            
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+
+        .navbar {
+          display: flex;
+            height: 70px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.288);
+        }
+
+
+        .navbar::before {
+            content: "";
+            background: url('https://source.unsplash.com/collection/190728/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+            border-radius: 80px;
+            overflow: hidden;
+
+        }
+       
+        a{
+            text-decoration: none;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+
+            
+        }
+        ul{
+            line-height: 70px;
+           
+            list-style: none;
+        }
+        li{
+            width: 150px;
+           
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            right: 10px;
+            line-height: 70px;
+           
+        }
+        .right > a{
+           padding: 0px 30px;
+        }
+        a:hover{
+            opacity: 0.6;
+        }
+        .footer{
+           
+            color: white;
+           font-size: 20px;
+           font-weight: bold;
+        }
+        #foot{
+            position: absolute;
+            bottom: 0px;
+            left: 45%;
+            text-align: center;
+            background-color: black;
+        }
+        .form{
+            width: 30%;
+            margin: 50px auto;
+            border: 1px solid black;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.288);
+            border-radius: 5px;
+        }
+      .form > form > div{
+        margin: 30px;
+        width: 300px;
+        margin: 30px auto;
+        font-size: 20px;
+        
+      }
+     #submit{
+          font-size: 20px;
+          padding: 10px;
+          border-radius: 5px;
+          color: white;
+          background-color: blue;
+          border: none;
+          position: relative;
+          left: 220px;
+      }
+      input{
+          padding: 5px;
+      }
+      form > div >h2{
+          text-transform: uppercase;
+          text-decoration: underline;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+       <ul>
+           <li><a href="./CA1.757.html"><img src="./logo1.jpeg" alt="logo"></a></li>
+       </ul>
+       <ul>
+           <li><a href="./CA1.757.html">Home</a></li>
+       </ul>
+       <ul>
+           <li><a href="#">Corporate</a></li>
+       </ul>
+       <ul>
+           <li><a href="./ca1757_2.html">Sale</a></li>
+       </ul>
+       <ul>
+           <li><a href="./ca1757_3.html">Services</a></li>
+       </ul>
+       <div class="right">
+           <a href="#">Register</a>
+           <a href="./ca1757_1.html">Login</a>
+       </div>  
+       
+    </div>
+   <div class="form">
+       <form action="#" method="post">
+           <div>
+               <h2>Product Details</h2>
+           </div>
+           <div>
+               <label for="Product_name">Product name</label>
+               <input type="text" name="Product_name" id="Product_name">
+           </div>
+           <div>
+               <label for="Product_model">Product model</label>
+               <input type="text" name="Product_model" id="Product_model">
+           </div>
+           <div>
+               <fieldset>
+                <legend>Type</legend>
+                New <input type="checkbox" name="type" id="type">
+                Refurbished <input type="checkbox" name="type" id="type">
+               </fieldset> 
+        </div>
+        <div>
+            <fieldset>
+                <legend>Type Car</legend>
+                <input type="radio" name="Type_car" id="Type_car">
+                <label for="Type_car">AC</label>
+                <input type="radio" name="Type_car" id="Type_car">
+                <label for="Type_car">Non-AC</label>  
+            </fieldset>
+        </div>
+        <div>
+            Select Car:
+            <select name="car" id="car">
+                <option value="None">Select Option</option>
+                <option value="Maruti_swift">Maruti Swift</option>
+                <option value="Maruti_baleno">Maruti Baleno</option>
+                <option value="Maruti_wagon">Maruti Wagon</option>
+            </select>
+        </div>
+        <div>
+            click to conform: <input type="checkbox" value="Ok">
+        </div>
+<div>
+    <input type="submit" value="submit" id="submit">
+</div>
+       </form>
+   </div>
+    <div class="footer">
+       
+        <div id="foot">
+
+            &copy by Rahul | 2022
+        </div>
+        
+    </div>
+</body>
+
+</html>

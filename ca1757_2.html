@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           
+            color: white;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .navbar {
+            display: flex;
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.288);
+        }
+
+
+        .navbar::before {
+            content: "";
+            background: url('https://source.unsplash.com/collection/190728/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        a>img {
+            height: 70px;
+            width: 70px;
+            border-radius: 80px;
+            overflow: hidden;
+
+        }
+
+        li>a {
+            text-decoration: none;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        ul {
+            line-height: 70px;
+
+            list-style: none;
+        }
+
+        li {
+            width: 150px;
+
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            line-height: 70px;
+
+        }
+
+        .right>a {
+            text-decoration: none;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0px 30px;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+
+        .footer {
+
+
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #foot {
+            position: absolute;
+            bottom: 0px;
+            left: 45%;
+            text-align: center;
+            background-color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 5px auto;
+        }
+        .buy {
+            color: black;
+        }
+        .display {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        tr {
+            padding: 0px;
+            width: 25%;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: rgb(244, 248, 248);
+        }
+        .img {
+            width: 100%;
+        }
+        #title {
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+        }
+        .btn {
+            float: right;
+            padding: 8px 15px;
+            font-weight: bold;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 5px;
+            margin: 3px 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        p {
+            margin: 5px;
+            color: black;
+        }
+        .item_tittle {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="./CA1.757.html"><img src="./logo1.jpeg" alt="logo"></a></li>
+        </ul>
+        <ul>
+            <li><a href="./CA1.757.html">Home</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Corporate</a></li>
+        </ul>
+        <ul>
+            <li><a href="./ca1757_2.html">Sale</a></li>
+        </ul>
+        <ul>
+            <li><a href="./ca1757_3.html">Services</a></li>
+        </ul>
+        <div class="right">
+            <a href="#">Register</a>
+            <a href="./ca1757_1.html">Login</a>
+        </div>
+
+    </div>
+    <div class="container">
+        <table id="table">
+            
+
+            <tbody class="display">
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+
+                                <img src="./hyundai.png" alt="car_picture" class="img">
+                            </div>
+                            <div class="buy">
+                                <h3 class="item_tittle">item tittle 1</h3>
+                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nemo, repellendus!</p>
+                                <a href="#" class="btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+
+                                <img src="./hyundai.png" alt="car_picture" class="img">
+                            </div>
+                            <div class="buy">
+                                <h3 class="item_tittle">item tittle 2</h3>
+                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Facere, porro.</p>
+                                <a href="#" class="btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+
+                                <img src="./hyundai.png" alt="car_picture" class="img">
+                            </div>
+                            <div class="buy">
+                                <h3 class="item_tittle">item tittle 3</h3>
+                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Numquam, tempora.</p>
+                                <a href="#" class="btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+
+                                <img src="./hyundai.png" alt="car_picture" class="img">
+                            </div>
+                            <div class="buy">
+                                <h3 class="item_tittle">item tittle 4</h3>
+                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cumque, dolores.</p>
+                                <a href="#" class="btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+
+                                <img src="./hyundai.png" alt="car_picture" class="img">
+                            </div>
+                            <div class="buy">
+                                <h3 class="item_tittle">item tittle 5</h3>
+                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor, tenetur.</p>
+                                <a href="#" class="btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <div>
+
+                                <img src="./hyundai.png" alt="car_picture" class="img">
+                            </div>
+                            <div class="buy">
+                                <h3 class="item_tittle">item tittle 6</h3>
+                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Magnam, a.</p>
+                                <a href="#" class="btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+
+        <div id="foot">
+
+            &copy by Rahul | 2022
+        </div>
+
+    </div>
+</body>
+
+</html>

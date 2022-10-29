@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           
+            color: white;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+
+        .navbar {
+          display: flex;
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.288);
+        }
+
+
+        .navbar::before {
+            content: "";
+            background: url('https://source.unsplash.com/collection/190728/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+            border-radius: 80px;
+            overflow: hidden;
+
+        }
+       
+        a{
+            text-decoration: none;
+            width: 150px;
+            font-size: 20px;
+            font-weight: b;
+            
+        }
+        ul{
+            line-height: 70px;
+           
+            list-style: none;
+        }
+        li{
+            width: 150px;
+           
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            right: 10px;
+            line-height: 70px;
+           
+        }
+        .right > a{
+           padding: 0px 30px;
+        }
+        a:hover{
+            opacity: 0.6;
+        }
+        .footer{
+           
+           
+           font-size: 20px;
+           font-weight: bold;
+        }
+        #foot{
+            position: absolute;
+            bottom: 0px;
+            left: 45%;
+            text-align: center;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+       <ul>
+           <li><a href="./CA1.757.html"><img src="./logo1.jpeg" alt="logo"></a></li>
+       </ul>
+       <ul>
+           <li><a href="./CA1.757.html">Home</a></li>
+       </ul>
+       <ul>
+           <li><a href="#">Corporate</a></li>
+       </ul>
+       <ul>
+           <li><a href="./ca1757_2.html">Sale</a></li>
+       </ul>
+       <ul>
+           <li><a href="./ca1757_3.html">Services</a></li>
+       </ul>
+       <div class="right">
+           <a href="#">Register</a>
+           <a href="./ca1757_1.html">Login</a>
+       </div>  
+       
+    </div>
+   
+    <div class="footer">
+       
+        <div id="foot">
+
+            &copy by Rahul | 2022
+        </div>
+        
+    </div>
+</body>
+
+</html>
